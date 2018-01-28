@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>chatterbox</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <!-- dependencies -->
     <script src="bower_components/underscore/underscore.js"></script>
@@ -27,10 +28,26 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
-    </div>
-    <div id="roomSelect"></div>
-    <div id="chats">
-      <div>HEllo!</div>
-    </div>
+      
+    </div>  
+    
+    <section id="chats">
+      <div id="roomNav">
+        <div class="usernameChange">
+          <input class="usernameInput" type="text" placeholder="what's your name?"><span class="usernameBtn"><a href="#" >Submit</a></span>
+        </div>
+        <div class="currentRm"></div>
+        <div class="roomSelect">
+          <a href=# class="roomBtn">select room</a>
+        </div>
+        <div class="roomSelect">
+          <a href=# class="createRoom">create room</a>
+        </div>
+      </div>  
+      <div class="chatBox">
+      <input class="messageInput" type="text" placeholder="what's on your mind?"><span class="submitBtn"><a href="#" >Submit</a></span>
+      </div>
+       
+    </section>
   </body>
 </html>
