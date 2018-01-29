@@ -27,26 +27,39 @@
   <body>
     <div id="main">
       <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
-      
+      <h5 class="tagline">...because we all like to chat!</h5>
     </div>  
     
-    <section id="chats">
+    <section id="chatSection">
+      <!-- Navigation buttons on left -->
       <div id="roomNav">
-        <div class="usernameChange">
-          <input class="usernameInput" type="text" placeholder="what's your name?"><span class="usernameBtn"><a href="#" >Submit</a></span>
+        <div class="roomHead">
+          <div class="roomHeadTitle">Welcome:</div>
+          <div class="showUserN">anonymous</div>
         </div>
-        <div class="currentRm"></div>
+        <div class="roomSelect">
+          <a href=# class="usernameChange">set username</a>
+        </div>
+        <div class="roomCreate">
+          <a href=# class="createRoom">create room</a>
+        </div>
         <div class="roomSelect">
           <a href=# class="roomBtn">select room</a>
         </div>
-        <div class="roomSelect">
-          <a href=# class="createRoom">create room</a>
+        <div class="showFriends">
+          <a href=# class="friendsBtn">show friends</a>
         </div>
-      </div>  
-      <div class="chatBox">
-      <input class="messageInput" type="text" placeholder="what's on your mind?"><span class="submitBtn"><a href="#" >Submit</a></span>
       </div>
+
+      <!-- Chat box where new chats populate, and user can submit input etc -->
+      <section class="chatBox">
+        <section class="chatHead">
+          <div class="chatTitle">current room:
+          <span class="currentRoom">Lobby</span></div>
+          <input class="messageInput" type="text" placeholder="what's on your mind?"><span class="submitBtn"><a href="#" >Submit</a></span>
+        </section>
+        <section id="chats">
+        </section>
        
     </section>
   </body>
